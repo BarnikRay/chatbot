@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 
-def chat(request):
-    return render(request, 'chat.html', {})
+def index(request):
+    return render(request, 'chat.html')

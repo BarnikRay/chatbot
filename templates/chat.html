@@ -1,8 +1,6 @@
-<head>
-    <title>Chatbot</title>
-</head>
-<html>
-<body>
-<h1>Hello World</h1>
-</body>
-</html>
+{% extends 'index.html' %}
+{% block mainbody %}
+    <h1>How you doing</h1>
+    {% load static %}
+    <img src="{% static 'img/favicon.ico' %}">
+{% endblock %}
