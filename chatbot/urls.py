@@ -14,15 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls import url
-from bot.views import index
-from . import settings
+from django.urls import include
+from django.views.generic import RedirectView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', index, name='index')
+    url(r'^$', RedirectView.as_view(url='/bot/')),
+    url(r'^bot/', include('bot.urls')),
 ]
-
-if settings.DEBUG:
-    urlpatterns += staticfiles_urlpatterns()

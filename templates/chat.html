@@ -1,6 +1,61 @@
 {% extends 'index.html' %}
 {% block mainbody %}
-    <h1>How you doing</h1>
-    {% load static %}
-    <img src="{% static 'img/favicon.ico' %}">
+    <div class="welcome block" id="app">
+        <div class="card-header text-center">
+            <h2>Welcome to Chatbot!</h2>
+        </div>
+        <div class="flex-row justify-content-center">
+            <form id="welcome" novalidate>
+                <div class="form-row justify-content-center">
+                    <div class="col-md-5 px-3">
+                        <input type="text" class="form-control m-auto" placeholder="Enter your name" id="name" required>
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please enter your name</div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-chevron-right"></i>Submit
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
+{% block scripts %}
+    {% csrf_token %}
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                let form = document.getElementById('welcome');
+                form.addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    if (form.checkValidity()) {
+                        return sendData(form);
+                    }
+                    form.classList.add('was-validated');
+                });
+            });
+        })();
+    </script>
+    <script>
+        function sendData(event) {
+            let xhr = new XMLHttpRequest();
+            xhr.open('post', '/bot/name/');
+            let name = {};
+            name['name'] = event.name.value;
+            name = JSON.stringify(name);
+            let csrftoken = $('[name=csrfmiddlewaretoken]').val();
+            xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            try {
+                xhr.send(name);
+                window.location.replace('/bot/main/');
+                return false;
+            } catch (e) {
+                console.log(e);
+            }
+        }
+    </script>
 {% endblock %}
