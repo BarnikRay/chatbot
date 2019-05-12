@@ -12,7 +12,7 @@ def index(request):
 def setname(request):
     global NAME
     data = json.loads(request.read())
-    NAME = data['name']
+    NAME = data['name'].upper()
     return HttpResponse(status=200)
 
 

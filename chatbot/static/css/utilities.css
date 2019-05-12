@@ -2,6 +2,11 @@
     background-color: #6f42c1;
 }
 
+.chat .card-header{
+    color: white;
+    background-color: #6f42c1;
+    tab-index: 0;
+}
 .welcome .flex-row {
     padding: 25% 0;
 }

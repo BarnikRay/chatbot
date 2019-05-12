@@ -1,7 +1,13 @@
 window.addEventListener('load', function () {
-    var vm = new Vue({
-        delimiters: ['[[', ']]'],
-        el: '#app',
-        data: {welcome: {name: false}}
+    $.ajax({
+        type: 'json',
+        url: '/static/json/queries.json',
+        success: function (data) {
+            var vm = new Vue({
+                delimiters: ['[[', ']]'],
+                el: '#app',
+                data: {query: data}
+            });
+        }
     });
 });
