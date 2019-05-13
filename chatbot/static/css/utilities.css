@@ -10,3 +10,14 @@
 .welcome .flex-row {
     padding: 25% 0;
 }
+
+.bot-message{
+    background-color:#d5d5d5;
+    max-width: fit-content;
+}
+
+.message{
+    background-color:#c0dec7;
+    max-width: fit-content;
+}
+

@@ -5,12 +5,22 @@
             <h2>Welcome {{ name }}</h2>
         </div>
         <div class="container chat-area">
-            <ul>
-                <li v-for="name of query">
-                    [[ name ]]
-                </li>
-            </ul>
+            <div class="my-lg-4 my-sm-3 p-lg-3 p-sm-2" v-for="message in messages"
+                 v-bind:class="{ 'bot-message' :message.bot, 'message' :message.user, 'ml-auto' :message.user}">
+                <span>[[message.text]]</span>
+            </div>
+            <div class="bot-message my-lg-4 my-sm-3 p-lg-3 p-sm-2">
+                <button class="border-dark">Hello</button>
+                <button class="border-dark">Hello</button>
+                <button class="border-dark">Hello</button>
+            </div>
+            <div class="message my-lg-4 my-sm-3 p-lg-3 p-sm-2 ml-auto">
+                <button class="border-dark">Hello</button>
+                <button class="border-dark">Hello</button>
+                <button class="border-dark">Hello</button>
+            </div>
         </div>
+        <button v-on:click="addMessage">Add Message</button>
     </div>
 {% endblock %}
 {% block scripts %}
@@ -19,4 +29,7 @@
     {# Vue #}
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.5"></script>
+    <script>
+
+    </script>
 {% endblock %}
