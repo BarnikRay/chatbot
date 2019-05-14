@@ -2,22 +2,36 @@
     background-color: #6f42c1;
 }
 
-.chat .card-header{
+.chat .card-header {
     color: white;
     background-color: #6f42c1;
-    tab-index: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.chat .card-footer{
+    background-color: #5a6268;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+}
+
+.chat-area{
+    overflow-y: scroll;
+    height: -webkit-fill-available;
 }
 .welcome .flex-row {
     padding: 25% 0;
 }
 
-.bot-message{
-    background-color:#d5d5d5;
+.bot-message {
+    background-color: #d5d5d5;
     max-width: fit-content;
 }
 
-.message{
-    background-color:#c0dec7;
+.message {
+    background-color: #c0dec7;
     max-width: fit-content;
 }
 

@@ -4,7 +4,7 @@
         <div class="card-header text-center">
             <h2>Welcome {{ name }}</h2>
         </div>
-        <div class="container chat-area">
+        <div class="chat-area p-xl-5 p-sm-3">
             <div class="my-lg-4 my-sm-3 p-lg-3 p-sm-2" v-for="message in messages"
                  v-bind:class="{ 'bot-message' :message.bot, 'message' :message.user, 'ml-auto' :message.user}">
                 <span>[[message.text]]</span>
@@ -20,7 +20,9 @@
                 <button class="border-dark">Hello</button>
             </div>
         </div>
-        <button v-on:click="addMessage">Add Message</button>
+        <div class="card-footer text-right">
+            <button v-on:click="addMessage">Add Message</button>
+        </div>
     </div>
 {% endblock %}
 {% block scripts %}

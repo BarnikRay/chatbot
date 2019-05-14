@@ -16,14 +16,13 @@ window.addEventListener('load', function () {
                 var message = {
                     "user": true,
                     "bot": false,
-                    "text": 'yo yo'
+                    "text": 'Hey!'
                 }
                 this.messages.push(message);
-                alert('yo');
                 var message1 = {
                     "user": false,
                     "bot": true,
-                    "text": 'yo yo'
+                    "text": 'Hello!'
                 }
                 this.messages.push(message1);
             }
