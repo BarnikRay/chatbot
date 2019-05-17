@@ -1,14 +1,4 @@
-let json = null;
 window.addEventListener('load', function () {
-    $.ajax({
-        type: 'json',
-        url: '/static/json/queries.json',
-        success: function (data) {
-            json = data;
-            vm.addMessage(false, false, 'Hello!');
-            vm.addMessage(false, true);
-        }
-    });
     var vm = new Vue({
         delimiters: ['[[', ']]'],
         el: '#app',
@@ -18,24 +8,23 @@ window.addEventListener('load', function () {
             level: 0,
             subcategory: null,
             question: null,
+            json: null
         },
         methods: {
-            addMessage: function (isUser, isOptions, message) {
+            addMessage: function (isUser, isOptions, msg) {
                 let path = [this.category, this.subcategory, this.question];
                 if (isUser) {
                     let message = {
                         "user": true,
                         "bot": false,
-                        "text": message,
+                        "text": msg,
                         "options": false
                     };
                     this.messages.push(message);
                 } else {
                     if (isOptions) {
                         let message = [];
-                        let jsonVal = json['categories'];
-                        console.log(jsonVal);
-
+                        let jsonVal = this.json['categories'];
                         for (let i = 0; i < this.level; i++) {
                             jsonVal = jsonVal[path[i]];
                         }
@@ -53,7 +42,7 @@ window.addEventListener('load', function () {
                         var message1 = {
                             "user": false,
                             "bot": true,
-                            "text": message,
+                            "text": msg,
                             "options": false
                         }
                         this.messages.push(message1);
@@ -84,7 +73,11 @@ window.addEventListener('load', function () {
             }
         },
         created: function () {
-            // this.addMessage(false,true);
+            fetch('/static/json/queries.json').then(data => data.json()).then(data => {
+                this.json = data;
+                this.addMessage(false,false,'Hey!');
+                this.addMessage(false,true);
+            });
         }
     });
 });
