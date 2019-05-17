@@ -7,21 +7,14 @@
         <div class="chat-area p-xl-5 p-sm-3">
             <div class="my-lg-4 my-sm-3 p-lg-3 p-sm-2" v-for="message in messages"
                  v-bind:class="{ 'bot-message' :message.bot, 'message' :message.user, 'ml-auto' :message.user}">
-                <span>[[message.text]]</span>
-            </div>
-            <div class="bot-message my-lg-4 my-sm-3 p-lg-3 p-sm-2">
-                <button class="border-dark">Hello</button>
-                <button class="border-dark">Hello</button>
-                <button class="border-dark">Hello</button>
-            </div>
-            <div class="message my-lg-4 my-sm-3 p-lg-3 p-sm-2 ml-auto">
-                <button class="border-dark">Hello</button>
-                <button class="border-dark">Hello</button>
-                <button class="border-dark">Hello</button>
+                <span v-if="!message.options">[[message.text]]</span>
+                <div v-if="message.options" v-for="msg in message.text" class="bot-message my-lg-4 my-sm-3 p-lg-3 p-sm-2">
+                    <button v-on:click="setCategory(msg)" class="border-dark">[[msg]]</button>
+                </div>
             </div>
         </div>
         <div class="card-footer text-right">
-            <button v-on:click="addMessage">Add Message</button>
+{#            <button v-on:click="addMessage(false,true)">Add Message</button>#}
         </div>
     </div>
 {% endblock %}

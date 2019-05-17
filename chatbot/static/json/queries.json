@@ -1,7 +1,42 @@
 {
-  "categories": [
-    "sports",
-    "tennis",
-    "football"
-  ]
+  "categories": {
+    "Science": {
+      "Astronomy": [],
+      "Physics": [],
+      "Chemistry": [],
+      "Biology": [],
+      "Earth Science": [],
+      "Others": []
+    },
+    "Arts and History": {
+      "Monuments": [],
+      "Renaissance": [],
+      "Paintings": [],
+      "Wars": [],
+      "Cities and Countries": [],
+      "Others": []
+    },
+    "Sports": {
+      "Cricket": [],
+      "Football": [],
+      "Tennis": [],
+      "Badminton": [],
+      "Others": []
+    },
+    "Entertainment": {
+      "Movies": [],
+      "Songs": [],
+      "Places to visit": [],
+      "Books": [],
+      "Others": []
+    },
+    "Business and politics": {
+      "Stock Market": [],
+      "Business tycoons": [],
+      "Companies and firms": [],
+      "Current affairs": [],
+      "Political affairs": [],
+      "Others": []
+    }
+  }
 }
