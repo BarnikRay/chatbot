@@ -1,0 +1,25 @@
+intents:
+  - general_faq
+  - greet
+
+entities:
+  - designation
+  - country
+
+slots:
+  designation:
+    type: text
+  country:
+    type: text
+
+templates:
+  utter_greet:
+    - 'Hello, how can I help you?'
+    - 'Hi, I am here to help.'
+  utter_ask_country:
+    - 'What country?'
+
+actions:
+  - utter_greet
+  - utter_ask_country
+  - actions.ActionOrderPizza

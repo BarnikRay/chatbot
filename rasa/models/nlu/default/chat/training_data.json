@@ -2,17 +2,14 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
-        "text": "hello",
         "intent": "greet",
-        "entities": []
+        "text": "hello"
       },
       {
-        "text": "hey",
         "intent": "greet",
-        "entities": []
+        "text": "hey"
       },
       {
-        "text": "Who is the president of India?",
         "intent": "general_faq",
         "entities": [
           {
@@ -27,10 +24,10 @@
             "value": "India",
             "entity": "country"
           }
-        ]
+        ],
+        "text": "Who is the president of India?"
       },
       {
-        "text": "who is the prime minister of England?",
         "intent": "general_faq",
         "entities": [
           {
@@ -45,8 +42,12 @@
             "value": "prime minister",
             "entity": "designation"
           }
-        ]
+        ],
+        "text": "who is the prime minister of England?"
       }
-    ]
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
   }
 }
