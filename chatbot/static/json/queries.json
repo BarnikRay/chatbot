@@ -1,19 +1,80 @@
 {
   "categories": {
     "Science": {
-      "Astronomy": [],
-      "Physics": [],
-      "Chemistry": [],
-      "Biology": [],
-      "Earth Science": [],
+      "Astronomy": {
+        "Do black hole really exist?": [],
+        "How long it it until our solar system ceases to exist?": [],
+        "How many planets are there in the new solar system?": [],
+        "How old is our earth?": [],
+        "How was the moon formed?": []
+      },
+      "Physics": {
+        "What is doomsday clock?": [],
+        "What effect does electricity have on soil?": [],
+        "What happens when you travel across the dateline?": [],
+        "What is meant by 4th dimension?": [],
+        "Why do boomerangs come back?": []
+      },
+      "Chemistry": {
+        "Who proposed the Atomic Theory?": [],
+        "Why gold does not rust?": [],
+        "What is the most common noble gas?": [],
+        "Where in the body is most of the iron located?": [],
+        "What is Avogadro's Number?": []
+      },
+      "Biology": {
+        "Why don't fishes sink in the water?": [],
+        "Which are the largest and smallest bones in the human body?": [],
+        "What is the principle behind DNA fingerprinting?": [],
+        "What is BMI?": [],
+        "What is Schizophrenia?": []
+      },
+      "Earth Science": {
+        "How did life on earth begin?": [],
+        "What is precession and why does earth experience it?": [],
+        "Where do hurricanes form?": [],
+        "Which is hotter - center of earth or surface of sun?": [],
+        "How does the wind move in low pressure?": []
+      },
       "Others": []
     },
     "Arts and History": {
-      "Monuments": [],
-      "Renaissance": [],
-      "Paintings": [],
-      "Wars": [],
-      "Cities and Countries": [],
+      "Monuments": {
+        "Which century gifted the Statue of Liberty to us?": [],
+        "Which country was built to commemorate the visit of king George V and Queen Mary to Bombay?": [],
+        "Where is the collection of limestone stacks, The Twelve Apostles located?": [],
+        "The Alhambra was built during whose rule in spain?": [],
+        "In which European nation are the Walls of Dubrovnik located": []
+      },
+      "Renaissance": {
+        "In which language was most of the literature of the English Renaissance is written?": [],
+        "In which country did Renaissance begin?": [],
+        "Who was the most important composer of the Renaissance period?": [],
+        "Which city was the center of Italian Renaissance?": [],
+        "How many plays did Shakespeare produce?": []
+      },
+      "Paintings": {
+        "Who was the greatest Renaissance painter of Venice?": [],
+        "'Madhubani', a syle of folk paintings, is popular in which states of India?": [],
+        "Under whose emperor's reign illumination and individual miniatures were replaced by wall paintings?": [],
+        "What was Pablo Picasso's full name?": [],
+        "In which place was the sculpture, 'Bust of Nefretiti' unearthed?": [] 
+      },
+      "Wars": {
+        "Who defeated Siraj-ud-Daula in the battle of Plassey in 1757?": [],
+        "In which battle was Tipu Sultan defeated by the English forces?": [],
+        "What was the treaty that was signed at the end of World War 1?": [],
+        "Which event triggered World War 2?": [],
+        "What does the term D-Day refer to?":[]
+      },
+      "Cities and Countries": {
+        "What was the original name of Sri Lanka?": [],
+        "Which is the first country to commence competitive exams in civil services?": [],
+        "Which is the northernmost capital of an independent nation in world?": [],
+        "In which country is a natural gas pit nicknamed as 'Door to hell' located": [],
+        "Which Indian city is famed for its clock tower?": []
+
+      },
       "Others": []
     },
     "Sports": {
