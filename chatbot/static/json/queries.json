@@ -78,10 +78,40 @@
       "Others": []
     },
     "Sports": {
-      "Cricket": [],
-      "Football": [],
-      "Tennis": [],
-      "Badminton": [],
+      "Cricket": {
+        "Which country won the first cricket world cup?": [],
+        "Who scored the first century in test cricket?": [],
+        "Who has scored fastest test hundred in terms of number of deliveries played?": [],
+        "What is the length of the bowling crease?": [],
+        "Who is called the Father of Cricket?": []
+      },
+      "Football": {
+        "Which country has won the football world cup maximum number of times?": [],
+        "Which player has scored highest number of goals in Football world cup?": [],
+        "Which national side plays at the Azteca?": [],
+        "Name the largest football stadium in the world.": [],
+        "Which is the oldest football club in India?": []
+      },
+      "Tennis": {
+        "Who is the first person to win wimbledon with an invitation?": [],
+        "How many serves is a player allowed in a game?": [],
+        "Who is credited with modern lawn tennis as we know it today?": [],
+        "What is the world's oldest tennis tournament?": []
+      },
+      "Basketball": {
+        "Who invented the game of basketball?": [],
+        "Where did the game of basketball originate?": [],
+        "Who is the tallest professional basketball player of all time?": [],
+        "When was women's basketball introduced in the olympics?": [],
+        "When was the Basketball federation of India established?": []
+      },
+      "Hockey": {
+        "Where did the word 'hockey' come from?": [],
+        "What is the distance of the position from where penalty stroke is taken from goalline in hockey?": [],
+        "Who is known as hockey wizard?": [],
+        "How many times has India won the world cup in hockey?": [],
+        "Which country has most olympic gold medals?": []
+      },
       "Others": []
     },
     "Entertainment": {
