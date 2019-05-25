@@ -2,8 +2,8 @@
   "categories": {
     "Science": {
       "Astronomy": {
-        "Do black hole really exist?": [],
-        "How long it it until our solar system ceases to exist?": [],
+        "Do black holes really exist?": [],
+        "How long is it until our solar system ceases to exist?": [],
         "How many planets are there in the new solar system?": [],
         "How old is our earth?": [],
         "How was the moon formed?": []
@@ -33,29 +33,29 @@
         "How did life on earth begin?": [],
         "What is precession and why does earth experience it?": [],
         "Where do hurricanes form?": [],
-        "Which is hotter - center of earth or surface of sun?": [],
-        "How does the wind move in low pressure?": []
+        "Which is hotter - center of the earth or surface the of sun?": [],
+        "How does the wind move in a low pressure?": []
       },
       "Others": []
     },
     "Arts and History": {
       "Monuments": {
-        "Which century gifted the Statue of Liberty to us?": [],
-        "Which country was built to commemorate the visit of king George V and Queen Mary to Bombay?": [],
-        "Where is the collection of limestone stacks, The Twelve Apostles located?": [],
+        "Which country gifted the Statue of Liberty to USA?": [],
+        "Which monument was built to commemorate the visit of king George V and Queen Mary to Bombay?": [],
+        "Where is the collection of limestone stacks, 'The Twelve Apostles' located?": [],
         "The Alhambra was built during whose rule in spain?": [],
-        "In which European nation are the Walls of Dubrovnik located": []
+        "In which European nation are the Walls of Dubrovnik located?": []
       },
       "Renaissance": {
         "In which language was most of the literature of the English Renaissance is written?": [],
         "In which country did Renaissance begin?": [],
         "Who was the most important composer of the Renaissance period?": [],
-        "Which city was the center of Italian Renaissance?": [],
+        "Which city was the center of the Italian Renaissance?": [],
         "How many plays did Shakespeare produce?": []
       },
       "Paintings": {
         "Who was the greatest Renaissance painter of Venice?": [],
-        "'Madhubani', a syle of folk paintings, is popular in which states of India?": [],
+        "'Madhubani', a syle of folk paintings, is popular in which state of India?": [],
         "Under whose emperor's reign illumination and individual miniatures were replaced by wall paintings?": [],
         "What was Pablo Picasso's full name?": [],
         "In which place was the sculpture, 'Bust of Nefretiti' unearthed?": [] 
@@ -71,9 +71,8 @@
         "What was the original name of Sri Lanka?": [],
         "Which is the first country to commence competitive exams in civil services?": [],
         "Which is the northernmost capital of an independent nation in world?": [],
-        "In which country is a natural gas pit nicknamed as 'Door to hell' located": [],
+        "In which country is a natural gas pit nicknamed as 'Door to hell' located?": [],
         "Which Indian city is famed for its clock tower?": []
-
       },
       "Others": []
     },
@@ -88,15 +87,16 @@
       "Football": {
         "Which country has won the football world cup maximum number of times?": [],
         "Which player has scored highest number of goals in Football world cup?": [],
-        "Which national side plays at the Azteca?": [],
+        "Which football club has White heart lane as their homeground?": [],
         "Name the largest football stadium in the world.": [],
-        "Which is the oldest football club in India?": []
+        "Which is the oldest football club of India?": []
       },
       "Tennis": {
-        "Who is the first person to win wimbledon with an invitation?": [],
+        "Who is the first person to win Wimbledon with an invitation?": [],
         "How many serves is a player allowed in a game?": [],
         "Who is credited with modern lawn tennis as we know it today?": [],
-        "What is the world's oldest tennis tournament?": []
+        "What is the world's oldest tennis tournament?": [],
+        "Which female tennis player holds the recrd for holding maximum number ofgrand slam titles?": []
       },
       "Basketball": {
         "Who invented the game of basketball?": [],
@@ -108,25 +108,86 @@
       "Hockey": {
         "Where did the word 'hockey' come from?": [],
         "What is the distance of the position from where penalty stroke is taken from goalline in hockey?": [],
-        "Who is known as hockey wizard?": [],
+        "Who is known as the hockey wizard?": [],
         "How many times has India won the world cup in hockey?": [],
-        "Which country has most olympic gold medals?": []
+        "Which country has won the most olympic gold medals in hockey?": []
       },
       "Others": []
     },
     "Entertainment": {
-      "Movies": [],
-      "Songs": [],
-      "Places to visit": [],
-      "Books": [],
+      "Movies": {
+        "Who is known as the father of Indian cinema ?": [],
+        "Which is the only Indian movie that won the Palme d'Or award in Cannes film festival?": [],
+        "Who is the youngest person ever to win a competitive acting Oscar?": [],
+        "Which actor has lost most number of times after being nominated for Oscar?": [],
+        "For which film did Leonardo Di Caprio win his first academy award?": []
+      },
+      "Music": {
+        "Which Indian playback singer has been awarded the 'Bharat Ratna'?": [],
+        "What was the name of Michael Jackson's band?": [],
+        "What is indicated by the word 'fine' on a piece of sheet music": [],
+        "Which string instrument has most number of strings?": [],
+        "Which country is Gangnam style from?": []
+      },
+      "Travel": {
+        "Which is the longest beach in India?": [],
+        "What is the name of annual fair in Rajasthan famous for camel trading?": [],
+        "Where is the grand Kremlin palace located?": [],
+        "Which country is also known as 'Land of Tohousand Lakes'?": [],
+        "Which is the largest shopping mall in Asia?": []
+      },
+      "Books": {
+        "Who is the father of English poetry?": [],
+        "Who is the author of 'Les Miserable'?": [],
+        "What was the original name of 'Mahabharata'?": [],
+        "The book 'The Man who knew infinity' is based on whose life?": [],
+        "Who said 'God helps those who help themselves'?": []
+      },
+      "Social Media": {
+        "What is one's 'Social Media Return on Investment'?": [],
+        "What is facebook 'Edgerank'?": [],
+        "Facebook was targeted originally at which demographic of users?": [],
+        "Who holds the title for most retweeted tweets ever?": [],
+        "When was Whatsapp found?": []
+      },
       "Others": []
     },
     "Business and politics": {
-      "Stock Market": [],
-      "Business tycoons": [],
-      "Companies and firms": [],
-      "Current affairs": [],
-      "Political affairs": [],
+      "Stock Market": {
+        "How many companies are included in the SENSEX?": [],
+        "'KOSPI' is the Index of which country?": [],
+        "What is the meaning 'Blue chip' in stock market?": [],
+        "Where is New York stock exchange located ?": [],
+        "Who is the current chairman of SEBI?": []
+      },
+      "Business tycoons": {
+        "Which telecom company has partnered with google for expanding its WIFI footprint?": [],
+        "According to which report Indian youtuber Ajey Nagar is named among top 10 next generation leaders of 2019?": [],
+        "Which company has launched the world's highest resolution image sensor?": [],
+        "Who is the richest businessman currently and what is his net worth?": [],
+        "What was Bill Gates' name when he was born?": []
+      },
+      "Companies and firms": {
+        "Which company established the first payment bank in India?": [],
+        "Borkshire Hathaway initially started out as which company?": [],
+        "Jaguar is the luxury vehicle brand of which company?": [],
+        "What is the full form of BMW?": [],
+        "Which Indian company was named after a schoolgirl from Gujrat?": []
+      },
+      "Current affairs": {
+        "Which asian country recently proposed removal of 2 term limit for president?": [],
+        "Which country has allowed women to join military for the first time ?": [],
+        "Which Russian President was re-eelected by winning historic 4th term?": [],
+        "Who won the 2019 Austrlian federal election?": [],
+        "Name the stand up comedian who was named as the most viewed stand up comedian in India and abroad in the world book of records in London?": []
+      },
+      "Political affairs": {
+        "Which tax is levied by the Union but collected and appropiated by the state?": [],
+        "Who can remove the Vice president from his office?": [],
+        "What does Laberalism stand for?": [],
+        "Who is the current vice president of USA?": [],
+        "Where is the headquarters of European Union located?": []
+      },
       "Others": []
     }
   }
