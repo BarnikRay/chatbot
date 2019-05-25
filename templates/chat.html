@@ -52,7 +52,9 @@
             xhr.setRequestHeader("X-CSRFToken", csrftoken);
             try {
                 xhr.send(name);
-                window.location.replace('/bot/main/');
+                xhr.onloadend = function () {
+                    window.location.replace('/bot/main/');
+                };
                 return false;
             } catch (e) {
                 console.log(e);
