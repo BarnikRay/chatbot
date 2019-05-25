@@ -35,8 +35,7 @@
         "Where do hurricanes form?": [],
         "Which is hotter - center of the earth or surface the of sun?": [],
         "How does the wind move in a low pressure?": []
-      },
-      "Others": []
+      }
     },
     "Arts and History": {
       "Monuments": {
@@ -73,8 +72,7 @@
         "Which is the northernmost capital of an independent nation in world?": [],
         "In which country is a natural gas pit nicknamed as 'Door to hell' located?": [],
         "Which Indian city is famed for its clock tower?": []
-      },
-      "Others": []
+      }
     },
     "Sports": {
       "Cricket": {
@@ -111,8 +109,7 @@
         "Who is known as the hockey wizard?": [],
         "How many times has India won the world cup in hockey?": [],
         "Which country has won the most olympic gold medals in hockey?": []
-      },
-      "Others": []
+      }
     },
     "Entertainment": {
       "Movies": {
@@ -149,8 +146,7 @@
         "Facebook was targeted originally at which demographic of users?": [],
         "Who holds the title for most retweeted tweets ever?": [],
         "When was Whatsapp found?": []
-      },
-      "Others": []
+      }
     },
     "Business and politics": {
       "Stock Market": {
@@ -187,8 +183,7 @@
         "What does Laberalism stand for?": [],
         "Who is the current vice president of USA?": [],
         "Where is the headquarters of European Union located?": []
-      },
-      "Others": []
+      }
     }
   }
 }

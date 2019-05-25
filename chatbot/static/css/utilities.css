@@ -50,14 +50,16 @@ body {
     max-width: fit-content;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .answer {
         max-width: 75% !important;
     }
 }
 
-.answer {
-    max-width: 50% !important;
+@media (min-width: 768px) {
+    .answer {
+        max-width: 50% !important;
+    }
 }
 
 .btn-circle {
@@ -65,5 +67,10 @@ body {
     width: 60px;
     border-radius: 30px;
     text-align: center;
+}
+
+.bot-message .btn {
+    white-space: unset;
+    text-align: left;
 }
 

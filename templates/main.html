@@ -15,7 +15,7 @@
                     <p><a v-bind:href="message.link" target="_blank">Click here to read more...</a></p>
                 </div>
                 <div v-if="message.options" v-for="msg in message.text"
-                     class="bot-message my-lg-4 my-3 p-lg-3 p-2">
+                     class="bot-message p-lg-3 p-2">
                     <button v-on:click="setCategory(msg)" class="btn btn-info">[[msg]]</button>
                 </div>
             </div>
@@ -26,8 +26,6 @@
                     <div class="col-md-5 col-8 px-3 align-self-center">
                         <input type="text" class="form-control m-auto" placeholder="Enter your question" id="question"
                                required>
-                        <div class="valid-feedback">Looks good!</div>
-                        <div class="invalid-feedback">Please enter the question</div>
                     </div>
                     <div class="px-3">
                         <button type="submit" class="btn btn-primary btn-circle"><i class="fa fa-arrow-right"></i>
@@ -51,7 +49,8 @@
                         Logging out will close this chat window. Click 'Save chat' to save a copy of your chat
                     </div>
                     <div class="modal-footer">
-                        <button v-on:click="thankyou" class="btn btn-secondary" id="logout" title="Logout">Logout</button>
+                        <button v-on:click="thankyou" class="btn btn-secondary" id="logout" title="Logout">Logout
+                        </button>
                         <button v-on:click="getLogFile" class="btn btn-primary" title="Save chat">Save chat</button>
                     </div>
                 </div>
