@@ -6,15 +6,34 @@
         </div>
         <div class="chat-area p-xl-5 p-sm-3">
             <div class="my-lg-4 my-sm-3 p-lg-3 p-sm-2" v-for="message in messages"
-                 v-bind:class="{ 'bot-message' :message.bot, 'message' :message.user, 'ml-auto' :message.user}">
-                <span v-if="!message.options">[[message.text]]</span>
-                <div v-if="message.options" v-for="msg in message.text" class="bot-message my-lg-4 my-sm-3 p-lg-3 p-sm-2">
+                 v-bind:class="{ 'bot-message' :message.bot, 'message' :message.user, 'ml-auto' :message.user,'answer': message.isAnswer}">
+                <span v-if="!message.options && !message.isAnswer">[[message.text]]</span>
+                <div v-if="message.isAnswer">
+                    <h4>[[message.title]]</h4>
+                    <p>[[message.body]]</p>
+                    <p><a v-bind:href="message.link" target="_blank">Click here to read more...</a></p>
+                </div>
+                <div v-if="message.options" v-for="msg in message.text"
+                     class="bot-message my-lg-4 my-sm-3 p-lg-3 p-sm-2">
                     <button v-on:click="setCategory(msg)" class="border-dark">[[msg]]</button>
                 </div>
             </div>
         </div>
-        <div class="card-footer text-right">
-{#            <button v-on:click="addMessage(false,true)">Add Message</button>#}
+        <div v-bind:class=" {'d-none': !custom}" class="card-footer flex-row justify-content-center">
+            <form id="question-form" v-on:submit.prevent="getAnswer(this)" novalidate>{% csrf_token %}
+                <div class="form-row justify-content-center">
+                    <div class="col-md-5 p-3">
+                        <input type="text" class="form-control m-auto" placeholder="Enter your question" id="question"
+                               required>
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please enter the question</div>
+                    </div>
+                    <div class="p-3">
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-chevron-right"></i>Submit
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 {% endblock %}
@@ -24,7 +43,4 @@
     {# Vue #}
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.5"></script>
-    <script>
-
-    </script>
 {% endblock %}

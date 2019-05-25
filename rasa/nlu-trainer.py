@@ -15,7 +15,7 @@ def train(data, config_file, model_dir):
 def run():
     interpreter = Interpreter.load('./models/nlu/default/chat')
     # print(interpreter.parse('I want to order pizza'))
-    print(interpreter.parse('u"who is the leader of iran?"'))
+    print(interpreter.parse("Bye"))
 
 
 if __name__ == '__main__':

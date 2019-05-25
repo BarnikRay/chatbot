@@ -5,16 +5,19 @@ API_KEY = os.environ['API_KEY']
 CSE_ID = os.environ['CSE_ID']
 
 
-def main():
+def fetchResponse(question):
     service = build("customsearch", "v1", developerKey=API_KEY)
     res = service.cse().list(
-        q='prime minister+india',
+        q=question,
         cx=CSE_ID,
         num=5
     ).execute()
-    res = res['items']
-    print(res[0])
+    res = res['items'][0]
+    response = {'link': res['link'], 'title': res['title'], 'desc': res['snippet']}
+    print(question)
+    print(response)
+    return response
 
 
 if __name__ == '__main__':
-    main()
+    fetchResponse('who is the president of india')

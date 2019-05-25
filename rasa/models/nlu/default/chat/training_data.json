@@ -10,6 +10,14 @@
         "text": "hey"
       },
       {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
         "intent": "general_faq",
         "entities": [
           {

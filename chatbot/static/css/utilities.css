@@ -35,3 +35,7 @@
     max-width: fit-content;
 }
 
+.answer {
+    max-width: 50% !important;
+}
+

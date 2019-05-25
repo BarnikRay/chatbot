@@ -35,8 +35,7 @@
         "Where do hurricanes form?": [],
         "Which is hotter - center of earth or surface of sun?": [],
         "How does the wind move in low pressure?": []
-      },
-      "Others": []
+      }
     },
     "Arts and History": {
       "Monuments": {
@@ -74,8 +73,7 @@
         "In which country is a natural gas pit nicknamed as 'Door to hell' located": [],
         "Which Indian city is famed for its clock tower?": []
 
-      },
-      "Others": []
+      }
     },
     "Sports": {
       "Cricket": {
@@ -111,23 +109,20 @@
         "Who is known as hockey wizard?": [],
         "How many times has India won the world cup in hockey?": [],
         "Which country has most olympic gold medals?": []
-      },
-      "Others": []
+      }
     },
     "Entertainment": {
       "Movies": [],
       "Songs": [],
       "Places to visit": [],
-      "Books": [],
-      "Others": []
+      "Books": []
     },
     "Business and politics": {
       "Stock Market": [],
       "Business tycoons": [],
       "Companies and firms": [],
       "Current affairs": [],
-      "Political affairs": [],
-      "Others": []
+      "Political affairs": []
     }
   }
 }

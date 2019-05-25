@@ -1,0 +1,36 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_ask_country
+- utter_goodbye
+config:
+  store_entities_as_slots: true
+entities:
+- designation
+- country
+forms: []
+intents:
+- general_faq:
+    use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+slots:
+  country:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  designation:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_country:
+  - text: What country?
+  utter_goodbye:
+  - text: Bye :(
+  utter_greet:
+  - text: Hello, how can I help you?
+  - text: Hi, I am here to help.

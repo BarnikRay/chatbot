@@ -1,6 +1,7 @@
 intents:
   - general_faq
   - greet
+  - goodbye
 
 entities:
   - designation
@@ -16,10 +17,12 @@ templates:
   utter_greet:
     - 'Hello, how can I help you?'
     - 'Hi, I am here to help.'
+  utter_goodbye:
+    - 'Bye :('
   utter_ask_country:
     - 'What country?'
 
 actions:
   - utter_greet
   - utter_ask_country
-  - actions.ActionOrderPizza
+  - utter_goodbye
