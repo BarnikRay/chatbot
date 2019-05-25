@@ -4,8 +4,8 @@
         <div class="card-header text-center">
             <h2>Welcome {{ name }}</h2>
         </div>
-        <div class="chat-area p-xl-5 p-sm-3">
-            <div class="my-lg-4 my-sm-3 p-lg-3 p-sm-2" v-for="message in messages"
+        <div class="chat-area p-xl-5 p-3">
+            <div class="my-lg-4 my-3 p-lg-3 p-2" v-for="message in messages"
                  v-bind:class="{ 'bot-message' :message.bot, 'message' :message.user, 'ml-auto' :message.user,'answer': message.isAnswer}">
                 <span v-if="!message.options && !message.isAnswer">[[message.text]]</span>
                 <div v-if="message.isAnswer">
@@ -14,7 +14,7 @@
                     <p><a v-bind:href="message.link" target="_blank">Click here to read more...</a></p>
                 </div>
                 <div v-if="message.options" v-for="msg in message.text"
-                     class="bot-message my-lg-4 my-sm-3 p-lg-3 p-sm-2">
+                     class="bot-message my-lg-4 my-3 p-lg-3 p-2">
                     <button v-on:click="setCategory(msg)" class="border-dark">[[msg]]</button>
                 </div>
             </div>
