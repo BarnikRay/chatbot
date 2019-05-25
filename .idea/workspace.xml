@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d56df05-6e44-4c4f-b6f5-2e7e6554389c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rasa/data/stories.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rasa/train_init.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rasa/train_online.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/customsearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/customsearch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/static/css/utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/static/css/utilities.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/static/js/vue-script.js" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/static/js/vue-script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/static/json/queries.json" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/static/json/queries.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get-pip.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rasa/config/faq_domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rasa/config/faq_domain.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rasa/data/trainer.json" beforeDir="false" afterPath="$PROJECT_DIR$/rasa/data/trainer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rasa/models/nlu/default/chat/component_2_CRFEntityExtractor.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/rasa/models/nlu/default/chat/component_2_CRFEntityExtractor.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rasa/models/nlu/default/chat/component_4_SklearnIntentClassifier.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/rasa/models/nlu/default/chat/component_4_SklearnIntentClassifier.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rasa/models/nlu/default/chat/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/rasa/models/nlu/default/chat/metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rasa/models/nlu/default/chat/training_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/rasa/models/nlu/default/chat/training_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rasa/nlu-trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasa/nlu-trainer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
-    </list>
+    <list default="true" id="4d56df05-6e44-4c4f-b6f5-2e7e6554389c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,11 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chatbot/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
             </state>
           </provider>
         </entry>
@@ -51,15 +36,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="21" selection-start-column="21" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="99" selection-start-line="21" selection-start-column="99" selection-end-line="21" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -190,9 +166,9 @@
         <option value="$PROJECT_DIR$/templates/chat.html" />
         <option value="$PROJECT_DIR$/chatbot/static/js/vue-script.js" />
         <option value="$PROJECT_DIR$/templates/main.html" />
-        <option value="$PROJECT_DIR$/chatbot/settings.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/chatbot/settings.py" />
       </list>
     </option>
   </component>
@@ -361,12 +337,12 @@
       <workItem from="1558756799765" duration="2609000" />
       <workItem from="1558763429166" duration="7479000" />
       <workItem from="1558773906477" duration="1305000" />
-      <workItem from="1558778144738" duration="634000" />
+      <workItem from="1558778144738" duration="925000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60097000" />
+    <option name="totallyTimeSpent" value="60388000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -379,6 +355,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2274678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -638,13 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chatbot/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="109" selection-start-line="26" selection-start-column="109" selection-end-line="26" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -717,6 +687,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatbot/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
         </state>
       </provider>
     </entry>
