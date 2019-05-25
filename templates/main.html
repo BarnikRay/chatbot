@@ -15,21 +15,21 @@
                 </div>
                 <div v-if="message.options" v-for="msg in message.text"
                      class="bot-message my-lg-4 my-3 p-lg-3 p-2">
-                    <button v-on:click="setCategory(msg)" class="border-dark">[[msg]]</button>
+                    <button v-on:click="setCategory(msg)" class="btn btn-info">[[msg]]</button>
                 </div>
             </div>
         </div>
         <div v-bind:class=" {'d-none': !custom}" class="card-footer flex-row justify-content-center">
-            <form id="question-form" v-on:submit.prevent="getAnswer(this)" novalidate>{% csrf_token %}
+            <form id="question-form" v-on:submit.prevent="getAnswer(this)">{% csrf_token %}
                 <div class="form-row justify-content-center">
-                    <div class="col-md-5 p-3">
+                    <div class="col-md-5 col-8 px-3 align-self-center">
                         <input type="text" class="form-control m-auto" placeholder="Enter your question" id="question"
                                required>
                         <div class="valid-feedback">Looks good!</div>
                         <div class="invalid-feedback">Please enter the question</div>
                     </div>
-                    <div class="p-3">
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-chevron-right"></i>Submit
+                    <div class="px-3">
+                        <button type="submit" class="btn btn-primary btn-circle"><i class="fa fa-arrow-right"></i>
                         </button>
                     </div>
                 </div>

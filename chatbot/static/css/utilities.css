@@ -1,3 +1,7 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
 .welcome .card-header {
     background-color: #6f42c1;
 }
@@ -10,17 +14,22 @@
     top: 0;
 }
 
-.chat .card-footer{
+.chat .card-footer {
     background-color: #5a6268;
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
 }
 
-.chat-area{
+.chat-area {
     overflow-y: scroll;
     height: -webkit-fill-available;
 }
+
+.chat-area .message, .bot-message {
+    border-radius: 15px;
+}
+
 .welcome .flex-row {
     padding: 25% 0;
 }
@@ -35,7 +44,20 @@
     max-width: fit-content;
 }
 
+@media (max-width: 768px) {
+    .answer {
+        max-width: 75% !important;
+    }
+}
+
 .answer {
     max-width: 50% !important;
+}
+
+.btn-circle {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    text-align: center;
 }
 
