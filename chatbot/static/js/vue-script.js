@@ -43,15 +43,17 @@ window.addEventListener('load', function () {
                         let message1 = {
                             "user": false,
                             "bot": true,
+                            "isAnswer": false,
                             "text": message,
                             "options": true
                         };
                         this.addMessage(false, false, this.questionHeader[this.level]);
                         this.messages.push(message1);
                     } else {
-                        var message1 = {
+                        let message1 = {
                             "user": false,
                             "bot": true,
+                            "isAnswer": false,
                             "text": msg,
                             "options": false
                         };
@@ -99,10 +101,13 @@ window.addEventListener('load', function () {
             getAnswer: function (event, input) {
                 this.custom = false;
                 let question = {};
-                if (event)
+                if (event) {
                     question['question'] = event.question.value;
-                else
+                    this.addMessage(true, false, question['question'], false);
+
+                } else {
                     question['question'] = input;
+                }
                 question = JSON.stringify(question);
                 let csrftoken = $('[name=csrfmiddlewaretoken]').val();
                 const init = {
@@ -114,7 +119,6 @@ window.addEventListener('load', function () {
                 };
                 fetch('/bot/getAnswer/', init).then(data => data.json()).then(data => {
                     let answer = data;
-                    console.log(answer['title']);
                     this.addMessage(false, false, "Here's what I got for you!");
                     let message = {
                         "user": false,
@@ -128,6 +132,35 @@ window.addEventListener('load', function () {
                     this.addMessage(false, false, message, true);
                     this.addMessage(false, true);
                 });
+            },
+            getLogFile: function () {
+                let csrftoken = $('[name=csrfmiddlewaretoken]').val();
+                let data = JSON.stringify(this.messages);
+                const init = {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRFToken': csrftoken
+                    },
+                    body: data
+                };
+                fetch('/bot/createLog/', init).then(function (response) {
+                    return response.blob();
+                }).then(function (blob) {
+                    let a = document.createElement('a');
+                    a.style.display = 'none';
+                    const objectURL = window.URL.createObjectURL(blob);
+                    a.href = objectURL;
+                    document.body.appendChild(a);
+                    a.download = 'chatlog.txt';
+                    a.click();
+                    setTimeout(function () {
+                        document.body.removeChild(a);
+                        window.URL.revokeObjectURL(objectURL);
+                    }, 100);
+                });
+            },
+            thankyou: function () {
+                window.location.replace('/bot/thankyou/');
             }
         },
         created: function () {

@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+{% block mainbody %}
+    <div class="logout block" id="app">
+        <div class="card-header text-center">
+            <h2>Sad to see you go {{ name }} :(</h2>
+        </div>
+        <div class="container py-5">
+            <div>
+                <h4>Thanks for exploring our bot! We hope you had a good time with it :). Hope to see you soon</h4>
+                <p class="py-2">Meanwhile we will try to improve our bot and try to make it more responsive and
+                    interactive.</p>
+            </div>
+            <div class="py-3 text-center">
+                <button class="btn btn-primary" onclick="window.location.replace('/bot/')" title="Click to chat again!">
+                    Chat Again!
+                </button>
+            </div>
+        </div>
+    </div>
+{% endblock %}

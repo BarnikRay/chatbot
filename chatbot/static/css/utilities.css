@@ -3,7 +3,8 @@ body {
 }
 
 .welcome .card-header {
-    background-color: #6f42c1;
+    background-color: #6f42c17a;
+    color: aliceblue;
 }
 
 .chat .card-header {
@@ -12,6 +13,11 @@ body {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+}
+
+.logout .card-header {
+    background-color: #0062cc;
+    color: #d0e3f7;
 }
 
 .chat .card-footer {
