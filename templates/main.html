@@ -15,7 +15,7 @@
                     <p><a v-bind:href="message.link" target="_blank">Click here to read more...</a></p>
                 </div>
                 <div v-if="message.options" v-for="msg in message.text"
-                     class="bot-message p-lg-3 p-2">
+                     class="p-lg-3 p-2">
                     <button v-on:click="setCategory(msg)" class="btn btn-info">[[msg]]</button>
                 </div>
             </div>
