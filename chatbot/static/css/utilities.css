@@ -20,6 +20,14 @@ body {
     color: #d0e3f7;
 }
 
+.logout .card-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0,123,255,.5);
+    color: #6c757d;
+}
+
 .chat .card-footer {
     background-color: #5a6268;
     position: -webkit-sticky;
