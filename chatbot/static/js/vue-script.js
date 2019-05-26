@@ -14,6 +14,7 @@ window.addEventListener('load', function () {
             questionHeader: ['Choose a category', 'Choose a subcategory', 'Choose a question']
         },
         methods: {
+            //Adds message to the chat interface
             addMessage: function (isUser, isOptions, msg, isAnswer) {
                 let path = [this.category, this.subcategory, this.question];
                 if (isUser) {
@@ -61,6 +62,7 @@ window.addEventListener('load', function () {
                     }
                 }
             },
+            //Sets the category when user clicks a button
             setCategory: function (category) {
                 this.messages.pop();
                 this.addMessage(true, false, category);
@@ -98,6 +100,7 @@ window.addEventListener('load', function () {
                 }
                 this.addMessage(false, true);
             },
+            //Retrieves answer from the server
             getAnswer: function (event, input) {
                 this.custom = false;
                 let question = {};
@@ -133,6 +136,7 @@ window.addEventListener('load', function () {
                     this.addMessage(false, true);
                 });
             },
+            //Retrieves the chatlog from the server
             getLogFile: function () {
                 let csrftoken = $('[name=csrfmiddlewaretoken]').val();
                 let data = JSON.stringify(this.messages);
