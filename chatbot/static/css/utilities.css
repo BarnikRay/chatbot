@@ -21,10 +21,10 @@ body {
 }
 
 .logout .card-footer {
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
-    background-color: rgba(0,123,255,.5);
+    background-color: rgba(0, 123, 255, .5);
     color: #6c757d;
 }
 
