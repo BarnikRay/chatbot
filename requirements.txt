@@ -2,3 +2,4 @@ django==2.2.1
 gunicorn
 google-api-python-client
 whitenoise
+mod_wsgi
