@@ -22,9 +22,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ldz1^wy0ch79^t#6kh6&ui--&55!yit0#q^q8%erx-^#(((=bp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'localhost', 'faq-bot-django.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'localhost', 'faq-bot-django.herokuapp.com',
+                 'django-env.wxywhviw5y.ap-south-1.elasticbeanstalk.com']
 
 # Application definition
 
@@ -103,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'ASIA/Kolkata'
 
 USE_I18N = True
 

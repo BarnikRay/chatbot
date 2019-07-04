@@ -136,3 +136,7 @@ node_modules/
 
 #Static Files
 staticfiles
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
