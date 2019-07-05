@@ -24,7 +24,7 @@ SECRET_KEY = 'ldz1^wy0ch79^t#6kh6&ui--&55!yit0#q^q8%erx-^#(((=bp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'localhost', 'faq-bot-django.herokuapp.com',
+ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'localhost',
                  'django-env.wxywhviw5y.ap-south-1.elasticbeanstalk.com']
 
 # Application definition
@@ -46,8 +46,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
+    'django.middleware.clickjacking.XFrameOptionsMiddleware'
 ]
 
 ROOT_URLCONF = 'chatbot.urls'
@@ -129,8 +128,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Session handling
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
