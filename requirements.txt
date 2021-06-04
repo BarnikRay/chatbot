@@ -1,4 +1,4 @@
-django==2.2.1
+django==2.2.21
 gunicorn
 google-api-python-client
 whitenoise
